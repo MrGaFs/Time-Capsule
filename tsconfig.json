@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Use ES6 or later as target
+    "module": "ESNext", // Use ESNext module system
+    "moduleResolution": "node", // Resolve modules like Node.js
+    "outDir": "./dist", // Output compiled files to the dist directory
+    "esModuleInterop": true, // Allow for compatibility with CommonJS modules
+    "skipLibCheck": true,
+    "sourceMap": true, // Generate source maps for debugging
+    "strict": true // Enable strict mode
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

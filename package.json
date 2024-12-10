@@ -1,0 +1,37 @@
+{
+  "name": "time-capsule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "yarn build && node dist/index.js",
+    "build": "tsc",
+    "watch:build": "tsc --watch",
+    "watch:dev": "nodemon --watch dist --exec 'node dist/index.js'",
+    "watch": "concurrently \"yarn watch:build\" \"yarn watch:dev\"",
+    "lint": "eslint src/**/* --fix",
+    "format": "prettier --write src/**/*",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4"
+  }
+}
