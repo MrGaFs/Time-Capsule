@@ -1,13 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES6", // Use ES6 or later as target
-    "module": "ESNext", // Use ESNext module system
-    "moduleResolution": "node", // Resolve modules like Node.js
-    "outDir": "./dist", // Output compiled files to the dist directory
-    "esModuleInterop": true, // Allow for compatibility with CommonJS modules
+    "target": "ES6",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "sourceMap": true, // Generate source maps for debugging
-    "strict": true // Enable strict mode
+    "sourceMap": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    // "baseUrl": "src",
+    "rootDir": "src",
+    "paths": {
+      "*": [
+        "./*"
+      ]
+    }
   },
   "include": [
     "src/**/*"
